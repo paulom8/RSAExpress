@@ -1,0 +1,1 @@
+this is an example of jquery reading a text file using Ajax

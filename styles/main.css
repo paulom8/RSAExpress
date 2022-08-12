@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+
+.header {
+    background-position: center;
+    position: relative;
+}
+
+.bk_green{
+    background-color: green;
+    color: white;
+}
+
+.bk_yellow{
+    background-color: yellow;
+}
+
+.bk_red{
+    background-color: red;
+}
+
+
+.table tbody tr:hover td, tbody tr:hover th {
+    background: #d3ebd9;
+}
+
