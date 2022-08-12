@@ -30,7 +30,7 @@
 
         $(document).ready(function() {  
             // That is just to demonstrate an Ajax function reading a file
-            // The Ajax could read a a json and then parse  the values
+            // The Ajax could read a json and then parse the values
             $.ajax({
                 url: "model/file.txt",
                 success: function (result,status,xhr) {
@@ -81,7 +81,7 @@
             }
             });
         
-            $( ".opener" ).on( "click", function() {
+            $(".opener").on( "click", function() {
                 var currentRow = $(this).closest("tr");
                 var lat = currentRow.find(".latitude").html(); // get latitude
                 var lon = currentRow.find(".longitude").html(); // get longitude
@@ -96,11 +96,11 @@
                             layerType: 'osm'
                     }]
 
-                    });
+                });
 
-                    $("#containerMap").ejMap("navigateTo", parseFloat(lat), parseFloat(lon), 15);
+                $("#containerMap").ejMap("navigateTo", parseFloat(lat), parseFloat(lon), 15);
 
-                $( "#dialog" ).dialog( "open" );
+                $("#dialog" ).dialog( "open" ); // open the dialog with the map
             });
 
         } );  
@@ -131,8 +131,6 @@
           </ul>
         </div>
       </nav>
-
-    <header class="page-header header container-fluid">
 
 <% 	
 Dim cnnConnection  ' ADO connection 	
